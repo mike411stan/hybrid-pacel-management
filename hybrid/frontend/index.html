@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Parcel Management System</title>
+    </head>
+    <body>
+        <h1>Parcel Management System</h1>
+        <button id="connectWallet">Connect Wallet</button>
+
+        <h2>Create Parcel</h2>
+        <form id="createParcelForm">
+            <label for="senderInput">Sender:</label>
+            <input type="text" id="senderInput" required />
+
+            <label for="recipientInput">Recipient:</label>
+            <input type="text" id="recipientInput" required />
+
+            <button type="submit">Create Parcel</button>
+        </form>
+
+        <h2>Update Parcel Status</h2>
+        <form id="updateParcelStatusForm">
+            <label for="parcelIdInput">Parcel ID:</label>
+            <input type="number" id="parcelIdInput" required />
+
+            <label for="statusInput">Status:</label>
+            <input type="text" id="statusInput" required />
+
+            <button type="submit">Update Status</button>
+        </form>
+
+        <h2>Get Parcel Details</h2>
+        <form id="getParcelForm">
+            <label for="parcelIdInput">Parcel ID:</label>
+            <input type="number" id="parcelIdInput" required />
+
+            <button type="submit">Get Details</button>
+        </form>
+
+        <div id="output"></div>
+
+        <script src="script.js" type="module"></script>
+    </body>
+</html>
